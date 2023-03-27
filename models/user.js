@@ -10,8 +10,8 @@ const Userschema = mongoose.Schema({
         required : true
     },
     phone_number:{
-        type : Date,
-        default : Date.now
+        type : Number,
+        required : true
     }
 });
 
