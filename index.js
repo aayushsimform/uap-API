@@ -11,7 +11,7 @@ const photoRouter = require("./routes/Photos");
 const app = express();
 
 const cors = require('cors');
-mongoose.connect("mongodb+srv://aayush:aayush@cluster0.6qog2eg.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect(mongoString);
 const database = mongoose.connection;
 //if connection is not success
 database.on('error', (error) => {
